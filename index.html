@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collin R. Timms - Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .resume-section {
+            margin: 20px 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .email-highlight {
+            color: #007bff;
+        }
+
+        /* Gallery styling */
+        .gallery-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+            gap: 15px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .gallery-container img {
+            width: 50%; /* Resize images to 50% of their original size */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Clock styling */
+        .clock-container {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .clock-container .time {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .clock-container .date {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        /* Additional sections */
+        .interest-section {
+            background-color: #fafafa; /* Same background color as other sections */
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Collin R. Timms</h1>
+                <p class="subtitle">Technical Support Specialist & IT Enthusiast</p>
+            </div>
+        </div>
+
+        <!-- Clock Display -->
+        <div id="clock" class="clock-container">
+            <div class="time" id="time"></div>
+            <div class="date" id="date"></div>
+        </div>
+
+        <!-- Icons Near the Clock -->
+        <div class="icons mt-4 text-center">
+            <div class="icon">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/python.svg" alt="Python Logo" width="80">
+            </div>
+            <div class="icon">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/java.svg" alt="Java Logo" width="80">
+            </div>
+            <div class="icon">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/linux.svg" alt="Linux Penguin Logo" width="80">
+            </div>
+            <div class="icon">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/fedora.svg" alt="Fedora Logo" width="80">
+            </div>
+            <div class="icon">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/ubuntu.svg" alt="Ubuntu Logo" width="80">
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="resume-section">
+            <h2>Contact Information</h2>
+            <p><span class="highlight">Address:</span> 520 Pear St NE Olympia, WA 98501</p>
+            <p><span class="highlight">Phone:</span> (951) 447-1337</p>
+            <p><span class="highlight">Email:</span> <a href="mailto:ctimms987@gmail.com" class="email-highlight">ctimms987@gmail.com</a></p>
+        </div>
+
+        <!-- Education & Certification Section -->
+        <div class="resume-section">
+            <h2>Education & Certification</h2>
+            <p><span class="highlight">CompTIA A+ - August 2023</span></p>
+            <ul>
+                <li>Gained experience in computer hardware & operating systems. Learned how to configure these different systems & diagnose various issues across platforms such as Windows, macOS, & Linux.</li>
+            </ul>
+            <p><span class="highlight">Microsoft's Introduction to Computers - Coursera - June 2023</span></p>
+            <ul>
+                <li>Completed Microsoft Introduction to Computers on Coursera, gaining foundational skills in Microsoft Office, file management, troubleshooting, & understanding of computer hardware, software, & security.</li>
+            </ul>
+            <p><span class="highlight">Lake Elsinore High School - High School Diploma</span> (2015-2019)</p>
+        </div>
+
+        <!-- Employment Experiences Section -->
+        <div class="resume-section">
+            <h2>Employment Experiences</h2>
+            <h3>Freelance Technical Support - Self Employed</h3>
+            <p><span class="highlight">August 2024 - Present</span> | Lacey, WA</p>
+            <ul>
+                <li>Repaired gaming consoles, computers, & smartphones. Diagnosing issues using multimeters, oscilloscopes, & other specialized tools.</li>
+                <li>Configured custom firmware & software (e.g., Android ROMs, RetroPie) to optimize device functionality, utilizing tools like Odin & Chimera Tool.</li>
+                <li>Delivered efficient, cost-effective solutions, reducing average repair time by 20% & maintaining a 95% customer satisfaction rate.</li>
+                <li>Managed an eBay shop & Facebook profile for modding & repair services, driving customer engagement, sales, & brand growth using data such as eBay’s data tools & advertisements.</li>
+            </ul>
+
+            <h3>Store Manager - Metro by T-Mobile</h3>
+            <p><span class="highlight">August 2023 - December 2024</span></p>
+            <ul>
+                <li>Enhanced sales performance through data-driven inventory management & promotional strategies, achieving a 15% increase in monthly revenue.</li>
+                <li>Provided technical support for customers, resolving minor device issues & ensuring compatibility with service plans.</li>
+                <li>Led a team of 5 staff, focusing on training & performance development to improve overall store efficiency.</li>
+                <li>Managed inventory & ordered devices, promotional materials, & accessories using internal ordering platforms while analyzing sales trends to maintain optimal stock levels.</li>
+                <li>Maintained store appearance & functionality by performing minor technical troubleshooting on display devices & ensuring compliance with corporate standards.</li>
+            </ul>
+
+            <h3>Director's Assistant - Family Education & Support Services</h3>
+            <p><span class="highlight">October 2021 - June 2023</span></p>
+            <ul>
+                <li>Assisted in streamlining digital & physical record management systems, improving accessibility & reducing retrieval times by 30% through process improvements.</li>
+                <li>Supported the coordination of community events, ensuring timely communication & logistical execution for up to 200 attendees.</li>
+                <li>Helped maintain relationships with families & local organizations, fostering effective communication & community engagement.</li>
+            </ul>
+
+            <h3>Automotive Audio Installer - Sound Waves</h3>
+            <p><span class="highlight">February 2018 - September 2021</span></p>
+            <ul>
+                <li>Installed & repaired car audio systems, GPS units, & backup cameras, ensuring seamless integration with vehicle electronics.</li>
+                <li>Improved connection reliability by 25% through professional-grade soldering & wiring techniques.</li>
+                <li>Trained junior technicians in installation standards, enhancing team productivity.</li>
+            </ul>
+        </div>
+
+        <!-- Professional Interests Section -->
+        <div class="interest-section">
+            <h2>Professional Interests</h2>
+            <p>I have a deep interest in the following fields:</p>
+            <ul>
+                <li><strong>Automotive Work</strong> – With 6 years of experience, I have a passion for working on cars and keeping them in top shape.</li>
+                <li><strong>Repurposing Technology</strong> – I enjoy restoring and repurposing old technologies such as computers to give them new life.</li>
+                <li><strong>Arduino & Cool Tech</strong> – I love experimenting with Arduino projects and exploring new and exciting technologies to create innovative solutions.</li>
+            </ul>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery-section">
+            <h2>My Photo Gallery</h2>
+            <div class="gallery-container">
+                <img src="https://imgur.com/XPg2jKt.jpg" alt="Gallery Image 1">
+                <img src="https://imgur.com/zMG46ss.jpg" alt="Gallery Image 2">
+                <img src="https://imgur.com/SSfknfJ.jpg" alt="Gallery Image 3">
+                <img src="https://imgur.com/jHeL8DY.jpg" alt="Gallery Image 4">
+                <img src="https://imgur.com/BmGUcsO.jpg" alt="Gallery Image 5">
+                <img src="https://imgur.com/XRWrqY8.jpg" alt="Gallery Image 6">
+                <img src="https://imgur.com/qEteAYh.jpg" alt="Gallery Image 7">
+                <img src="https://imgur.com/mtmXNof.jpg" alt="Gallery Image 8">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

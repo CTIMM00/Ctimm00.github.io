@@ -1,0 +1,123 @@
+/* Body styling */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #F0E6D2; /* Eggshell background */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading and Section Styling */
+h1 {
+    color: #000000;
+    margin-top: 20px;
+}
+
+.subtitle {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1d1d1d;
+}
+
+/* Clock container with floating animation, smaller size */
+.clock-container {
+    font-size: 1.5em;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: #E6D6B3;
+    border-radius: 5px;
+    display: inline-block;
+    border: 3px solid #000000;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Ensures it stays on top */
+    animation: swim 5s ease-in-out infinite;
+}
+
+@keyframes swim {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(0) rotate(-5deg);
+    }
+    75% {
+        transform: translateY(5px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Calendar Container */
+.calendar-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #E6D6B3;
+    border: 3px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10; /* Ensures it stays on top */
+}
+
+/* Icons container styling */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon {
+    margin: 10px;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Resume Section Styling */
+.resume-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #F0E6D2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.resume-section:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight text */
+.highlight {
+    font-weight: bold;
+}
+
+/* Contact Info and Email Highlight */
+.contact-info a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
